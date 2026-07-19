@@ -35,7 +35,7 @@ This project is actively under development. The current version includes a respo
 
 ## Demo Video
 
-
+[![SignConnect Demo](homepage.png)](projectvideo.mp4)
 
 
 
