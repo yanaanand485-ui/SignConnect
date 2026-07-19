@@ -41,19 +41,29 @@ This project is actively under development. The current version includes a respo
 
 ## Screenshots
 
-### Landing Page
+### Home / Landing Page
+
+![Home Page](homepage.png)
 
 ### Login Page
 
-### Dashboard
+![Login Page](loginwebproject.png)
 
-### Learning Module
+### Main Website
 
-### Greeting  Module
+![Main Website](weboroject1stpage.png)
+
+### Greeting Page
+
+![Greeting Page](greetingpage.png)
 
 ### Practice Page
 
-### Ending Page
+![Practice Page](practisepage.png)
+
+### End Page
+
+![End Page](endpage.png)
 
 
 
