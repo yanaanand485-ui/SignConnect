@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emotions Signs</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+}
+
+
+body{
+    opacity:0;
+    transition:opacity 1s ease;
+}
+
+.number-row,
+.alphabet-row,
+.greet-row,
+.emotion-row,
+.word-row,
+.conv-row,
+.learn-row {
+    transition: 0.5s;
+}
+
+
+.emotion-section{
+margin-top:40px;
+}
+
+.emotion-row{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 30px;
+margin-bottom:15px;
+background:#f5f5f5;
+border-radius:10px;
+}
+
+.emotion-name{
+font-size:30px;
+font-weight:bold;
+}
+
+.emotion-row img{
+width:120px;
+}
+
+.chapter-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:60px;
+}
+
+.chapter-buttons button{
+padding:12px 25px;
+background:black;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.chapter-buttons button:hover{
+background:#333;
+}
+
+
+.practice-panel{
+position:fixed;
+top:0;
+right:-100%;
+width:100%;
+height:100%;
+background:white;
+padding:40px;
+box-sizing:border-box;
+overflow:auto;
+transition:0.5s;
+}
+
+#practice:target{
+right:0;
+}
+
+.close-btn{
+position:absolute;
+top:20px;
+right:30px;
+font-size:28px;
+text-decoration:none;
+color:black;
+}
+
+.question{
+margin-top:40px;
+}
+
+.option{
+display:block;
+margin:10px 0;
+padding:10px;
+width:200px;
+border:1px solid black;
+border-radius:6px;
+cursor:pointer;
+}
+
+input[type="radio"]{
+display:none;
+}
+
+.correct:checked + label{
+background:green;
+color:white;
+}
+
+.wrong:checked + label{
+background:red;
+color:white;
+}
+
+.next-btn{
+display:inline-block;
+margin-top:50px;
+padding:12px 25px;
+background:black;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+ 
+.info{
+margin:40px 30px;
+background:#fafafa;
+padding:20px;
+border-radius:10px;
+line-height:1.6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Chapter: Emotions Signs</h1>
+
+<div class="info">
+
+<p>
+In this chapter, you will learn some basic emotion signs used in sign language. 
+Emotions help people understand feelings during communication.
+</p>
+
+<p>
+Try to observe hand shapes and facial expressions carefully while learning these signs. 
+Regular practice will help you improve your understanding.
+</p>
+
+</div>
+
+<div class="emotion-section">
+
+<div class="emotion-row">
+<div class="emotion-name">Happy</div>
+<img src="https://i.pinimg.com/originals/3a/1e/db/3a1edbbda41b059635546c3a618078f9.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Sad</div>
+<img src="https://i.pinimg.com/originals/18/a7/a2/18a7a2d9c0019e2f3678fb02e44c4247.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Bored</div>
+<img src="https://i.pinimg.com/originals/01/78/e6/0178e6910d8c068f75f8beba83168032.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Pain</div>
+<img src="https://i.pinimg.com/originals/f6/ff/0f/f6ff0f24af83def7c9464161cb60d118.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Shocked</div>
+<img src="https://i.pinimg.com/736x/10/20/87/10208713575bfb54497030ba3a5b4af5.jpg">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Annoyed</div>
+<img src="https://i.pinimg.com/originals/8b/6e/10/8b6e10213aada7d01288453c47cd5029.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Overwhelmed</div>
+<img src="https://i.pinimg.com/originals/2f/96/83/2f9683fdeb832112244569620b36f629.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Exhausted</div>
+<img src="https://i.pinimg.com/originals/ca/4e/ec/ca4eececc49f2fc8151364e65a8a3ed7.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Panicked</div>
+<img src="https://i.pinimg.com/originals/7c/59/58/7c595872ee540d9726fa5ae2edc7d23e.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Distracted</div>
+<img src="https://i.pinimg.com/originals/51/57/fa/5157faa086ff9e1ab51f63d07d4c671f.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Awesome</div>
+<img src="https://i.pinimg.com/originals/8c/a7/e3/8ca7e3caa8649ae3a6b9467d25039c5e.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Obsessed</div>
+<img src="https://i.pinimg.com/originals/d1/ef/25/d1ef25938d12bb12fefef0a13a72d907.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Sorry</div>
+<img src="https://i.pinimg.com/originals/6d/ce/2c/6dce2c3abae43c5b2c8bb5ea4059eac1.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Hopeful</div>
+<img src="https://i.pinimg.com/originals/6a/60/98/6a6098c22119e2a956a1084f5aac8084.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Mean</div>
+<img src="https://i.pinimg.com/originals/88/cc/af/88ccaff25536a9942673b171ff16899e.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Broken Hearted</div>
+<img src="https://i.pinimg.com/originals/7c/3d/2d/7c3d2d1324ed8f5c3aa4e824f4a7c969.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Help</div>
+<img src="https://i.pinimg.com/originals/02/75/fc/0275fc8c1e6885e22e6ac2db414243f2.gif">
+</div>
+
+<div class="emotion-row">
+<div class="emotion-name">Allergic</div>
+<img src="https://i.pinimg.com/736x/96/43/d1/9643d18ef86925675375840c1caea65b.jpg">
+</div>
+
+</div>
+
+<div class="chapter-buttons">
+
+<a href="family.html">
+<button>&larr; Previous</button>
+</a>
+
+<a href="#practice">
+<button>Practice</button>
+</a>
+
+<a href="conversion.html">
+<button>Next &rarr;</button>
+</a>
+
+</div>
+
+<div id="practice" class="practice-panel">
+
+<a href="#" class="close-btn">&times;</a>
+
+<h2>Practice</h2>
+
+<div class="question">
+
+<p>Which emotion sign is this?</p>
+
+<img src="https://i.pinimg.com/originals/be/7b/01/be7b010a1b1a95b39330d705e14e9765.gif" width="120">
+
+<input type="radio" id="e1a" name="e1" class="correct">
+<label for="e1a" class="option">Sick</label>
+
+<input type="radio" id="e1b" name="e1" class="wrong">
+<label for="e1b" class="option">Sad</label>
+
+<input type="radio" id="e1c" name="e1" class="wrong">
+<label for="e1c" class="option">Allergic</label>
+
+</div>
+
+<div class="question">
+
+<p>Which emotion sign is this?</p>
+
+<img src="https://i.pinimg.com/originals/bd/8b/ae/bd8bae66e5bf7cc35e11ce6d5d68bf7b.gif" width="120">
+
+<input type="radio" id="e2a" name="e2" class="correct">
+<label for="e2a" class="option">Happy</label>
+
+<input type="radio" id="e2b" name="e2" class="wrong">
+<label for="e2b" class="option">Sad</label>
+
+<input type="radio" id="e2c" name="e2" class="wrong">
+<label for="e2c" class="option">Angry</label>
+
+</div>
+
+<a href="conversion.html" class="next-btn">
+Next Chapter &rarr;
+</a>
+
+</div>
+
+<script src="project.js"></script>
+</body>
+
+
+</html>
+
+

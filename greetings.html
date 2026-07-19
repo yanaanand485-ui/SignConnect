@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+font-family:Arial;
+margin:0;
+}
+
+body{
+    opacity:0;
+    transition:opacity 1s ease;
+}
+
+.number-row,
+.alphabet-row,
+.greet-row,
+.emotion-row,
+.word-row,
+.conv-row,
+.learn-row {
+    transition: 0.5s;
+}
+
+.greet-section{
+margin-top:40px;
+}
+
+.greet-row{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 30px;
+margin-bottom:15px;
+background:#f5f5f5;
+border-radius:10px;
+}
+
+.greet-word{
+font-size:28px;
+font-weight:bold;
+}
+
+.greet-row img{
+width:120px;
+}
+
+
+
+.greet-info{
+margin:50px 30px;
+background:#fafafa;
+padding:30px;
+border-radius:12px;
+line-height:1.8;
+font-size:17px;
+}
+
+.learn-row{
+display:flex;
+align-items:center;
+gap:30px;
+margin-bottom:35px;
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.learn-row.reverse{
+flex-direction:row-reverse;
+}
+
+.learn-row img{
+width:140px;
+border-radius:10px;
+}
+
+.learn-text{
+flex:1;
+}
+
+
+
+.chapter-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:60px;
+}
+
+.chapter-buttons button{
+padding:12px 25px;
+background:black;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.chapter-buttons button:hover{
+background:#333;
+}
+
+
+
+.practice-panel{
+position:fixed;
+top:0;
+right:-100%;
+width:100%;
+height:100%;
+background:white;
+padding:40px;
+box-sizing:border-box;
+overflow:auto;
+transition:0.5s;
+}
+
+#practice:target{
+right:0;
+}
+
+.close-btn{
+position:absolute;
+top:20px;
+right:30px;
+font-size:28px;
+text-decoration:none;
+color:black;
+}
+
+
+
+.option{
+display:inline-block;
+margin:15px;
+padding:10px;
+border:2px solid black;
+border-radius:10px;
+cursor:pointer;
+width:170px;
+box-sizing:border-box;
+text-align:center;
+transition:0.3s;
+}
+
+.option img{
+width:100%;
+max-width:140px;
+height:auto;
+display:block;
+border-radius:10px;
+}
+
+.option:hover{
+transform:scale(1.05);
+}
+
+
+
+input[type="radio"]{
+display:none;
+}
+
+.correct:checked + label{
+background:green;
+border-color:green;
+}
+
+.wrong:checked + label{
+background:red;
+border-color:red;
+}
+
+
+.next-btn{
+display:inline-block;
+margin-top:50px;
+padding:12px 25px;
+background:black;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<h1>Chapter : Greetings in Sign Language</h1>
+
+<div class="greet-section">
+
+<div class="greet-row">
+<div class="greet-word">Hello</div>
+<img src="https://i.pinimg.com/736x/96/61/59/966159d88a02dff13ab296fcd86a555b.jpg">
+</div>
+
+<div class="greet-row">
+<div class="greet-word">Good Morning</div>
+<img src="https://i.pinimg.com/736x/25/40/06/254006e841263c6a2d8b6a51bbfabbc7.jpg">
+</div>
+
+<div class="greet-row">
+<div class="greet-word">Good Afternoon</div>
+<img src="https://i.pinimg.com/736x/cf/5e/32/cf5e324fe77b380b29855c9a3afe25ce.jpg">
+</div>
+
+<div class="greet-row">
+<div class="greet-word">Good Evening</div>
+<img src="https://i.pinimg.com/736x/02/fa/f3/02faf348923f2fad19543c7f509439e5.jpg">
+</div>
+
+<div class="greet-row">
+<div class="greet-word">Thank You</div>
+<img src="https://i.pinimg.com/736x/b8/8b/d0/b88bd07d3d4b99c8b38cf707913e406c.jpg">
+</div>
+
+<div class="greet-row">
+<div class="greet-word">See You Later</div>
+<img src="https://i.pinimg.com/736x/45/0b/41/450b41a60b9c459d85c6daa9a3cbf033.jpg">
+</div>
+
+<div class="greet-row">
+<div class="greet-word">Welcome Home</div>
+<img src="https://i.pinimg.com/736x/3e/0f/6b/3e0f6b04bb45c409cf14d5fb89d96bc2.jpg">
+</div>
+
+<div class="greet-row">
+<div class="greet-word">Goodbye</div>
+<img src="https://i.pinimg.com/474x/50/bb/38/50bb381b34f531b83c7f4c8d362f6d09.jpg">
+</div>
+
+</div>
+
+
+<div class="greet-info">
+
+<div class="learn-row">
+<img src="https://i.pinimg.com/originals/84/82/9f/84829f4ea30b2203ed8002246d15bd1c.gif">
+
+<div class="learn-text">
+<p>
+After learning alphabets and numbers, greetings are the next important step in sign language communication. Greetings help us start conversations politely and express respect and friendliness.
+
+In this chapter, you will learn some basic greeting signs that are commonly used in daily interactions. Practising these signs regularly will help you become more confident while communicating with others using sign language.
+
+In future chapters, we will continue learning more useful expressions and conversational signs.
+</p>
+</div>
+</div>
+
+</div>
+
+
+<div class="greet-info">
+
+<div class="learn-row reverse">
+<img src="https://i.pinimg.com/originals/c1/9f/12/c19f12aa8bd54cd20e7ca4a7333fc4f6.gif">
+
+<div class="learn-text">
+<p>
+As you continue your journey of learning sign language, it is completely natural to experience confusion or small challenges while understanding different hand movements and expressions. In the beginning, many learners feel that remembering signs or coordinating hand shapes takes more time than expected.
+</p>
+</div>
+</div>
+
+<div class="learn-row">
+<img src="https://i.pinimg.com/originals/5f/5b/34/5f5b340ea3b190832c91a67b2f34389c.gif">
+
+<div class="learn-text">
+<p>
+In this chapter, we are focusing on basic greetings that are used in everyday communication. Greetings are an important part of social interaction because they help us start conversations politely and build positive connections with others.
+</p>
+
+<p>
+Sometimes you may feel that progress is slow or that you are making mistakes while practising. However, these moments are part of learning and improvement. With consistency and dedication, the same signs that feel difficult today will become easy and natural in the future.
+</p>
+</div>
+</div>
+
+<div class="learn-row reverse">
+<img src="https://i.pinimg.com/originals/f9/5f/a5/f95fa58e4b6a523b6881639c128ad679.gif">
+
+<div class="learn-text">
+<p>
+At this stage, your goal is not to achieve perfection but to develop familiarity and confidence. In the upcoming chapters, you will explore more useful expressions and practical situations where sign language can be applied.
+
+Stay motivated, trust your learning process, and continue practising with curiosity and enthusiasm.
+</p>
+</div>
+</div>
+
+</div>
+
+
+<div class="chapter-buttons">
+
+<a href="numbers.html">
+<button>&larr; Previous</button>
+</a>
+
+<a href="#practice">
+<button>Practice</button>
+</a>
+
+<a href="dailywords.html">
+<button>Next &rarr;</button>
+</a>
+
+</div>
+
+
+
+<div id="practice" class="practice-panel">
+
+<a href="#" class="close-btn">&times;</a>
+
+<h2>Greetings Practice</h2>
+
+<p>Which image shows the sign for “Help”?</p>
+
+
+
+<input type="radio" id="q1a" name="q1" class="correct">
+<label for="q1a" class="option">
+<img src="https://i.pinimg.com/originals/c1/1b/c5/c11bc56d8fb577ca1681bd6d458831ff.gif">
+</label>
+
+
+
+<input type="radio" id="q1b" name="q1" class="wrong">
+<label for="q1b" class="option">
+<img src="https://i.pinimg.com/originals/fa/26/e1/fa26e1ab6c895b7b825d02bba9aaf279.gif">
+</label>
+
+
+
+<input type="radio" id="q1c" name="q1" class="wrong">
+<label for="q1c" class="option">
+<img src="https://i.pinimg.com/originals/a7/a5/fc/a7a5fc266f936c130be8814268116797.gif">
+</label>
+
+
+
+
+
+<p>Which image shows the  correct sign for "Thank you"?</p>
+
+
+
+<input type="radio" id="q2a" name="q2" class="correct">
+<label for="q2a" class="option">
+<img src="https://i.pinimg.com/originals/05/fe/44/05fe44a56d2ba0e935537b32114a42f2.gif">
+</label>
+
+
+<input type="radio" id="q2b" name="q2" class="wrong">
+<label for="q2b" class="option">
+<img src="https://i.pinimg.com/736x/62/c9/0c/62c90cb6333871d984a00dcaaffe9dab.jpg">
+</label>
+
+
+
+<input type="radio" id="q2c" name="q2" class="wrong">
+<label for="q2c" class="option">
+<img src="https://i.pinimg.com/originals/1e/c9/6c/1ec96c74e1beff9f54441db7e2bf22a7.gif">
+</label>
+
+
+<a href="dailywords.html" class="next-btn">
+Next Chapter &rarr;
+</a>
+</div>
+
+
+
+<script src="project.js"></script>
+</body>
+
+
+</html>

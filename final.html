@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Congratulations</title>
+
+<style>
+
+
+
+body{
+    font-family:Arial;
+    margin:0;
+    text-align:center;
+    background:black;
+    color:white;
+    overflow:hidden;
+}
+
+
+.final-box{
+    margin:80px auto;
+    width:70%;
+    background:#111;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 0 30px rgba(255,255,255,0.1);
+    animation:fadeUp 1s ease;
+}
+
+
+.final-box h1{
+    font-size:40px;
+    
+}
+
+
+.final-box img{
+    width:180px;
+    margin-top:20px;
+    animation:bounce 2s infinite;
+}
+
+
+button{
+    margin-top:30px;
+    padding:12px 25px;
+    background:white;
+    color:black;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+   
+}
+
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+
+@keyframes bounce{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-10px); }
+}
+
+
+.confetti{
+    position:fixed;
+    width:8px;
+    height:8px;
+    background:white;
+    top:-10px;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh) rotate(360deg);
+    }
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="final-box">
+
+<h1>Congratulations </h1>
+
+<p>
+You have successfully completed the beginner chapters of sign language learning.
+You learned alphabets, numbers, family signs, emotions and basic conversations.
+</p>
+
+<p>
+Keep practising regularly to improve your communication skills and confidence.
+Learning never stops 
+</p>
+
+<img src="https://i.pinimg.com/originals/65/71/f8/6571f8061ec7ca05b1b81a397b9cf725.gif">
+
+<br>
+
+<a href="home.html">
+<button>Restart Learning</button>
+</a>
+
+</div>
+
+<script >
+    
+for(let i=0; i<40; i++){
+    let dot = document.createElement("div");
+    dot.classList.add("confetti");
+
+    dot.style.left = Math.random() * 100 + "vw";
+    dot.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+    document.body.appendChild(dot);
+}
+
+
+
+let text = "You did it! \u{1F389}";  
+let i = 0;
+
+let target = document.querySelector("h1");
+target.innerHTML = "";
+
+function type(){
+    if(i < text.length){
+        target.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 80);
+    }
+}
+
+type();
+
+</script>
+</body>
+
+</html>

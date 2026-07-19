@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Phase</title>
+<style>
+
+    html{
+  scroll-behavior: smooth;
+}
+
+    body{
+font-family: Arial;
+background:#f5f5f5;
+text-align:center;
+opacity:1;
+    transition:opacity 1s ease;
+}
+
+
+
+.main-layout{
+
+display:flex;
+justify-content:center;
+
+gap:40px;
+
+margin-top:40px;
+
+}
+
+.sidebar{
+
+width:220px;
+
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+text-align:left;
+position:sticky;
+top:20px;
+height:fit-content;
+
+}
+
+.sidebar ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.sidebar li{
+
+margin:10px 0;
+
+}
+.sidebar a:hover{
+    background:#e6e6e6;
+}
+
+
+.chapter-container{
+display:grid;
+
+grid-template-columns: repeat(2, 380px);
+justify-content:center;
+gap:40px;
+max-width:900px;
+margin-top:50px;
+}
+.chapter-card img{
+width:100%;
+height:220px;
+border-radius:10px 10px 0 0;
+}
+
+.chapter-card{
+background:white;
+width:100%;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+overflow:hidden;
+padding-bottom:20px;
+transition:0.3s;
+}
+
+.chapter-card:hover{
+transform:scale(1.05);
+}
+
+
+
+.chapter-card a{
+display:inline-block;
+margin-top:10px;
+padding:10px 18px;
+background:black;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Learning Phase</h1>
+<div class="main-layout">
+<div class="chapter-container">
+
+    <div class="chapter-card" id="intro">
+        <img src="https://i.pinimg.com/736x/eb/d5/ae/ebd5aefbf073c91408a5154b32b5dcc8.jpg">
+        <h3>Introduction to Sign Language</h3>
+        <p>Learn what sign language is and how deaf people communicate using hand gestures, facial expressions, and body movements.</p>
+        <a href="intro.html">Start</a>
+    </div>
+
+    <div class="chapter-card" id="alphabet">
+        <img src="https://i.pinimg.com/736x/63/55/46/635546c0a6bd1d5bd9b60ff0f292b66b.jpg">
+        <h3>Alphabet Signs (A–Z)</h3>
+        <p>In this chapter you will learn how to sign all the letters from A to Z using hand gestures.</p>
+        <a href="alphabet.html">Start</a>
+    </div>
+
+    <div class="chapter-card" id="numbers">
+        <img src="https://i.pinimg.com/736x/c1/06/92/c10692bc6c3c3c82aa196835719721cf.jpg">
+        <h3>Numbers</h3>
+        <p>Learn how to show numbers using sign language, including basic counting from 0 to 10.</p>
+        <a href="numbers.html">Start</a>
+    </div>
+
+    <div class="chapter-card" id="greetings">
+       <img src="https://i.pinimg.com/1200x/36/b7/e2/36b7e2e1a62bc7114e5fd62d3c3e16dc.jpg">
+        <h3>Basic Greetings</h3>
+        <p>Learn common greeting signs such as hello, thank you, sorry, and good morning.</p>
+        <a href="greetings.html">Start</a>
+    </div>
+
+    <div class="chapter-card" id="dailywords">
+         <img src="https://i.pinimg.com/1200x/43/20/0d/43200ded21c5f9627470befb96eb5c8b.jpg">
+        <h3>Daily Use Words</h3>
+        <p>This chapter teaches simple daily words like eat, drink, sleep, go, and study.</p>
+        <a href="dailywords.html">Start</a>
+    </div>
+
+    <div class="chapter-card" id="family">
+        <img src="https://i.pinimg.com/736x/0d/d8/72/0dd8729162d24e12e3554766c20d09cf.jpg">
+        <h3>Family & People</h3>
+        <p>Learn signs for family members such as mother, father, brother, sister, and friend.</p>
+        <a href="family.html">Start</a>
+    </div>
+
+    <div class="chapter-card" id="emotions">
+        <img src="https://i.pinimg.com/736x/c1/97/69/c197692354d955e3cd5cebc5cc15cfdc.jpg">
+        <h3>Emotions & Feelings</h3>
+        <p>Understand how to express emotions like happy, sad, angry, and excited through sign language.</p>
+        <a href="emotions.html">Start</a>
+    </div>
+
+    <div class="chapter-card" id="conversation">
+        <img src="https://i.pinimg.com/736x/ff/66/0c/ff660c669e54e6c9bd8a38886115f176.jpg">
+        <h3>Simple Conversations</h3>
+        <p>Learn basic sentences and questions used in everyday communication like “How are you?” and “What is your name?”</p>
+        <a href="conversion.html">Start</a>
+    </div>
+
+</div>
+
+    <div class="sidebar">
+
+<h3>Chapters</h3>
+
+<ul>
+
+<li><a href="#intro">Chapter 1: Introduction to Sign Language</a></li>
+
+<li><a href="#alphabet">Chapter 2: Alphabet Signs (A–Z)</a></li>
+
+<li><a href="#numbers">Chapter 3: Numbers in Sign Language</a></li>
+
+<li><a href="#greetings">Chapter 4: Basic Greetings</a></li>
+
+<li><a href="#dailywords">Chapter 5: Daily Use Words</a></li>
+
+<li><a href="#family">Chapter 6: Family & People Signs</a></li>
+
+<li><a href="#emotions">Chapter 7: Emotions & Feelings</a></li>
+
+<li><a href="#conversation">Chapter 8: Simple Conversations</a></li>
+
+</ul>
+
+</div>
+</div>
+
+</body>
+</html>

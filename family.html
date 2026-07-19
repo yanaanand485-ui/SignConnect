@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Family & People</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+}
+
+
+body{
+    opacity:0;
+    transition:opacity 1s ease;
+}
+
+.number-row,
+.alphabet-row,
+.greet-row,
+.emotion-row,
+.word-row,
+.conv-row,
+.learn-row {
+    transition: 0.5s;
+}
+
+.info{
+margin:40px 30px;
+background:#fafafa;
+padding:20px;
+border-radius:10px;
+line-height:1.6;
+}
+
+.people-section{
+margin-top:40px;
+}
+
+.people-row{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 30px;
+margin-bottom:15px;
+background:#f5f5f5;
+border-radius:10px;
+}
+
+.member{
+font-size:30px;
+font-weight:bold;
+}
+
+.people-row img{
+width:120px;
+}
+
+.chapter-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:60px;
+}
+
+.chapter-buttons button{
+padding:12px 25px;
+background:black;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.chapter-buttons button:hover{
+background:#333;
+}
+
+
+.practice-panel{
+position:fixed;
+top:0;
+right:-100%;
+width:100%;
+height:100%;
+background:white;
+padding:40px;
+box-sizing:border-box;
+overflow:auto;
+transition:0.5s;
+}
+
+#practice:target{
+right:0;
+}
+
+.close-btn{
+position:absolute;
+top:20px;
+right:30px;
+font-size:28px;
+text-decoration:none;
+color:black;
+}
+
+.question{
+margin-top:40px;
+}
+
+.option{
+display:block;
+margin:10px 0;
+padding:10px;
+width:200px;
+border:1px solid black;
+border-radius:6px;
+cursor:pointer;
+}
+
+input[type="radio"]{
+display:none;
+}
+
+.correct:checked + label{
+background:green;
+color:white;
+}
+
+.wrong:checked + label{
+background:red;
+color:white;
+}
+
+.next-btn{
+display:inline-block;
+margin-top:50px;
+padding:12px 25px;
+background:black;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.extra-info{
+margin:40px 30px;
+padding:15px;
+background:#fafafa;
+border-left:5px solid black;
+font-size:16px;
+line-height:1.6;
+border-radius:8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Chapter : Family & People Signs</h1>
+
+<div class="info">
+
+<p>
+Great progress &#11088; You have already learned alphabets and numbers.
+Now you are moving towards real-life communication signs.
+</p>
+
+<p>
+In this chapter you will learn signs for important family members and common people.
+These signs help you introduce your family and talk about relationships.
+</p>
+
+<p>
+Keep practicing regularly. You are learning at a very good pace &#128512;
+</p>
+
+</div>
+
+<div class="people-section">
+
+<div class="people-row">
+<div class="member">Mother</div>
+<img src="https://i.pinimg.com/originals/3f/f3/5b/3ff35bfedac8c5b039a883716a47b4ef.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Father</div>
+<img src="https://i.pinimg.com/originals/a0/b5/09/a0b509318b11eaf8ab7ce6d5f2944a45.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Brother</div>
+<img src="https://i.pinimg.com/originals/db/3d/bf/db3dbf50165861a9bb6d4a14cfbae518.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Sister</div>
+<img src="https://i.pinimg.com/originals/a1/94/fa/a194face96c1eec6de475bd9c8da786e.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Aunt</div>
+<img src="https://i.pinimg.com/originals/1f/c4/ae/1fc4ae800ba32543565d6a10c7bc205c.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Grandmother</div>
+<img src="https://i.pinimg.com/originals/7b/e5/e3/7be5e3ab257fa627fc9441d91aca43c8.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Uncle</div>
+<img src="https://i.pinimg.com/originals/1f/c4/ae/1fc4ae800ba32543565d6a10c7bc205c.gif">
+</div>
+
+<div class="extra-info">
+There are some additional useful signs that you can learn to improve your daily communication skills.
+</div>
+
+<div class="people-row">
+<div class="member">Mother-in -law</div>
+<img src="https://i.pinimg.com/originals/ae/2e/93/ae2e9357f83119a75cfbde72150c99aa.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Step Dad</div>
+<img src="https://i.pinimg.com/originals/33/9a/b7/339ab7b61ace0ea76ac2c4f748bc0b01.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Niece</div>
+<img src="https://i.pinimg.com/originals/81/3a/ab/813aabca545ae32c85747e138b8f7d2d.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Step Sister</div>
+<img src="https://i.pinimg.com/originals/17/06/0d/17060dd180c77cfe58c2448a5867d214.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Baby</div>
+<img src="https://i.pinimg.com/originals/5f/5a/7d/5f5a7d0db15d8ad74926f831bf641fb8.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Wife</div>
+<img src="https://i.pinimg.com/originals/6c/d4/97/6cd497f8fd1746ab1110d47ce669d3de.gif">
+</div>
+
+<div class="people-row">
+<div class="member">Boyfriend</div>
+<img src="https://i.pinimg.com/originals/39/fc/dc/39fcdcb376edf125ef76a534ebb5c204.gif">
+</div>
+
+
+
+</div>
+
+<div class="chapter-buttons">
+
+<a href="dailywords.html">
+<button>&larr; Previous</button>
+</a>
+
+<a href="#practice">
+<button>Practice</button>
+</a>
+
+<a href="emotions.html">
+<button>Next &rarr;</button>
+</a>
+
+</div>
+
+<div id="practice" class="practice-panel">
+
+<a href="#" class="close-btn">&times;</a>
+
+<h2>Practice</h2>
+
+<div class="question">
+
+<p>Which sign is this?</p>
+
+<img src="https://i.pinimg.com/originals/3f/f3/5b/3ff35bfedac8c5b039a883716a47b4ef.gif" width="120">
+
+<input type="radio" id="p1a" name="p1" class="correct">
+<label for="p1a" class="option">Mother</label>
+
+<input type="radio" id="p1b" name="p1" class="wrong">
+<label for="p1b" class="option">Friend</label>
+
+<input type="radio" id="p1c" name="p1" class="wrong">
+<label for="p1c" class="option">Teacher</label>
+
+</div>
+
+
+<div class="question">
+
+<p>Which sign is this?</p>
+
+<img src="https://i.pinimg.com/originals/89/0f/f6/890ff69aaeb9b51d368ce98eb450b2ce.gif" width="120">
+
+<input type="radio" id="p2a" name="p2" class="correct">
+<label for="p2a" class="option">Family</label>
+
+<input type="radio" id="p2b" name="p2" class="wrong">
+<label for="p2b" class="option">Friend</label>
+
+<input type="radio" id="p2c" name="p2" class="wrong">
+<label for="p2c" class="option">Teacher</label>
+
+</div>
+<a href="emotions.html" class="next-btn">
+Next Chapter &rarr;
+</a>
+
+</div>
+
+
+<script src="project.js"></script>
+</body>
+
+
+</html>

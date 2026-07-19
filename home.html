@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SignConnect</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+line-height:1.6;
+}
+
+
+
+.hero{
+
+height:100vh;
+
+position:relative;
+
+color:white;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+overflow:hidden;
+
+}
+
+.bg-video{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+z-index:-1;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+max-width:600px;
+
+}
+
+
+
+.section{
+
+padding:80px 60px;
+
+max-width:1200px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+
+
+.features{
+
+display:flex;
+
+gap:30px;
+
+justify-content:center;
+
+margin-top:40px;
+
+}
+
+.feature-box{
+
+background:#f5f5f5;
+
+padding:30px;
+
+border-radius:10px;
+
+width:300px;
+
+}
+
+
+
+.phase-container{
+
+display:flex;
+
+justify-content:center;
+
+gap:40px;
+
+margin-top:50px;
+
+}
+
+.phase{
+
+background:#000;
+
+color:white;
+
+padding:40px;
+
+border-radius:10px;
+
+width:300px;
+
+cursor:pointer;
+
+text-decoration: none;
+
+display: block;
+
+}
+
+
+button{
+    position: relative;
+    overflow: hidden;
+}
+
+.phase:hover{
+
+background:#333;
+
+}
+
+.section{
+    opacity:0;
+    transform:translateY(50px);
+    transition:0.6s;
+}
+
+.levels{
+
+display:flex;
+
+
+
+gap:25px;
+
+overflow-x: auto;
+
+margin-top:40px;
+
+scroll-behavior: smooth;
+
+padding: 10px;
+
+}
+
+.level{
+
+background:#f0f0f0;
+
+width:220px;
+
+height:150px;
+
+padding:20px;
+
+border-radius:10px;
+
+text-align:center;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+flex-shrink:0;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.level:hover{
+
+transform:translateY(-5px);
+
+transition:0.3s;
+
+}
+
+.levels-wrapper{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:15px;
+
+margin-top:40px;
+
+}
+
+.arrow{
+
+font-size:28px;
+
+background:black;
+
+color:white;
+
+padding:10px 15px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+}
+
+
+footer{
+
+background:black;
+
+color:white;
+
+padding:40px;
+
+text-align:center;
+
+}
+
+
+.logout-btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.logout-btn:hover{
+    background: #333;
+}
+
+#progress{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: white;
+    width: 0%;
+    z-index: 9999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="progress"></div>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+
+<section class="hero">
+
+<video autoplay muted loop  class="bg-video">
+
+<source src="homehero2.mp4" type="video/mp4">
+
+</video>	
+
+<h1>Learn Sign Language Easily</h1>
+<p id="welcomeUser"></p>
+
+<p>
+A simple platform to help beginners understand and learn American Sign Language through visual examples and guided lessons.
+</p>
+
+</section>
+
+
+
+<section class="section">
+
+<h2>About This Platform</h2>
+
+<h4>
+This website is designed to make sign language learning accessible for everyone. Whether you are a beginner or someone interested in understanding deaf communication, our platform provides structured lessons and visual demonstrations to help you learn step by step.
+</h4>
+
+</section>
+
+
+
+<section class="section">
+
+<h2>Why Learn With Us?</h2>
+
+<div class="features">
+
+<div class="feature-box">
+
+<h3>Visual Learning</h3>
+
+<p>
+Learn through clear images and videos that demonstrate each sign.
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>Step-by-Step Levels</h3>
+
+<p>
+Our lessons are divided into levels so beginners can progress easily.
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>Accessible Learning</h3>
+
+<p>
+Anyone can learn sign language using our simple and interactive content.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<h2>Start Learning</h2>
+
+<div class="phase-container">
+
+<a href="learning.html" class="phase">
+
+<h3>Learning Phase</h3>
+
+<p>
+Explore chapters and gradually learn sign language from basic to advanced levels.
+</p>
+
+</a>
+
+
+<a href="translator.html" class="phase">
+
+<h3>Translator Phase</h3>
+
+<p>
+Use the translator tool to convert words into sign language visuals.
+</p>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<h2>Learning Levels</h2>
+
+<div class="levels-wrapper">
+
+<button class="arrow" onclick="moveLeft()">&lt;</button>
+
+<div class="levels" >
+
+<div class="level" id="left">
+<h3>Level 1</h3>
+<p>Alphabet Signs</p>
+</div>
+
+<div class="level">
+<h3>Level 2</h3>
+<p>Numbers</p>
+</div>
+
+<div class="level">
+<h3>Level 3</h3>
+<p>Basic Words</p>
+</div>
+
+<div class="level">
+<h3>Level 4</h3>
+<p>Daily Conversation</p>
+</div>
+
+<div class="level">
+<h3>Level 5</h3>
+<p>Family and People</p>
+</div>
+
+<div class="level">
+<h3>Level 5</h3>
+<p>Emotions and Feelings</p>
+</div>
+
+<div class="level">
+<h3>Level 6</h3>
+<p>Greetings</p>
+</div>
+
+<div class="level" id="right">
+<h3>Level 7</h3>
+<p>Simple Conversations</p>
+</div>
+
+</div>
+
+
+<button class="arrow" onclick="scrollRight()">&gt;</button>
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<h2>Connect Through Sign Language</h2>
+
+<p>
+Learning sign language helps bridge communication gaps and promotes inclusivity in society. By understanding sign language, we create opportunities for better communication between hearing and deaf communities.
+</p>
+
+</section>
+
+
+<footer>
+
+<h3>ASL Learning Platform</h3>
+
+<p>Email: contact&commat;aslplatform.com</p>
+
+<p>Phone: +91 00000 00000</p>
+
+<p>&copy; 2026 All Rights Reserved</p>
+
+</footer>
+
+
+<script>
+
+let current = localStorage.getItem("currentUser");
+
+if(!current){
+    document.querySelector(".logout-btn").style.display = "none";
+}
+
+function logout(){
+    localStorage.removeItem("currentUser");
+    window.location.href = "login.html";
+}
+
+let users = JSON.parse(localStorage.getItem("users"));
+let currentUser = localStorage.getItem("currentUser");
+
+if(users){
+    for(let i=0; i<users.length; i++){
+        if(users[i].email === currentUser){
+            document.getElementById("welcomeUser").innerText = 
+                "Welcome, " + users[i].name;
+            break;
+        }
+    }
+}
+
+
+window.addEventListener("scroll", function(){
+    let scrollTop = document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    let percent = (scrollTop / height) * 100;
+
+    document.getElementById("progress").style.width = percent + "%";
+});
+
+
+
+function moveLeft(){
+    document.querySelector(".levels").scrollBy({
+        left: -200,
+        behavior: "smooth"
+    });
+}
+
+function scrollRight(){
+    document.querySelector(".levels").scrollBy({
+        left: 200,
+        behavior: "smooth"
+    });
+}
+
+
+
+
+
+
+
+
+
+window.addEventListener("scroll", function(){
+    document.querySelectorAll(".section").forEach(sec => {
+        let pos = sec.getBoundingClientRect().top;
+        let screen = window.innerHeight;
+
+        if(pos < screen - 100){
+            sec.style.opacity = 1;
+            sec.style.transform = "translateY(0)";
+        }
+    });
+});
+</script>
+</body>
+
+</html>

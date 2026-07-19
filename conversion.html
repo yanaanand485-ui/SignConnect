@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Conversation Signs</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+}
+
+body{
+    opacity:0;
+    transition:opacity 1s ease;
+}
+
+.number-row,
+.alphabet-row,
+.greet-row,
+.emotion-row,
+.word-row,
+.conv-row,
+.learn-row {
+    transition: 0.5s;
+}
+
+.info{
+margin:40px 30px;
+background:#fafafa;
+padding:20px;
+border-radius:10px;
+line-height:1.6;
+}
+
+.conv-section{
+margin-top:40px;
+}
+
+.conv-row{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 30px;
+margin-bottom:15px;
+background:#f5f5f5;
+border-radius:10px;
+}
+
+.conv-name{
+font-size:28px;
+font-weight:bold;
+}
+
+.conv-row img{
+width:120px;
+}
+
+
+.chapter-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:60px;
+}
+
+.chapter-buttons button{
+padding:12px 25px;
+background:black;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.chapter-buttons button:hover{
+background:#333;
+}
+
+
+
+.practice-panel{
+position:fixed;
+top:0;
+right:-100%;
+width:100%;
+height:100%;
+background:white;
+padding:40px;
+box-sizing:border-box;
+overflow:auto;
+transition:0.5s;
+}
+
+#practice:target{
+right:0;
+}
+
+.close-btn{
+position:absolute;
+top:20px;
+right:30px;
+font-size:28px;
+text-decoration:none;
+color:black;
+}
+
+.question{
+margin-top:40px;
+}
+
+.option{
+display:block;
+margin:10px 0;
+padding:10px;
+width:200px;
+border:1px solid black;
+border-radius:6px;
+cursor:pointer;
+}
+
+input[type="radio"]{
+display:none;
+}
+
+.correct:checked + label{
+background:green;
+color:white;
+}
+
+.wrong:checked + label{
+background:red;
+color:white;
+}
+
+.next-btn{
+display:inline-block;
+margin-top:50px;
+padding:12px 25px;
+background:black;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.motivation{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:40px 30px;
+background:#fafafa;
+padding:20px;
+border-radius:10px;
+}
+
+.motivation-text{
+width:65%;
+line-height:1.6;
+}
+
+.motivation-gif{
+width:30%;
+text-align:right;
+}
+
+.motivation-gif img{
+width:140px;
+}
+
+.start-info{
+display:flex;
+align-items:center;
+justify-content:space-between;
+margin:40px 30px;
+background:#fafafa;
+padding:20px;
+border-radius:10px;
+}
+
+.start-gif{
+width:30%;
+}
+
+.start-gif img{
+width:150px;
+}
+
+.start-text{
+width:65%;
+line-height:1.6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Chapter: Basic Conversation Signs</h1>
+
+<div class="start-info">
+
+<div class="start-gif">
+<img src="https://i.pinimg.com/originals/ac/c9/f9/acc9f93d8255e5d39b94090034c05063.gif">
+</div>
+
+<div class="start-text">
+
+<p>
+I know this is not enough, but if you practise even these basic signs regularly, you will slowly start learning how to do simple daily conversations in sign language.
+</p>
+
+<p>
+In the next phase, we will also learn how to understand and perform sign language translation step by step.
+</p>
+
+</div>
+
+</div>
+
+<div class="conv-section">
+
+<div class="conv-row">
+<div class="conv-name">I Understand</div>
+<img src="https://i.pinimg.com/originals/1e/b3/c7/1eb3c7016366f162672a8bbf62fc8c87.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">I Know</div>
+<img src="https://i.pinimg.com/originals/c6/fa/0b/c6fa0b81c78936fe71d07a620333955b.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">I Like It</div>
+<img src="https://i.pinimg.com/originals/66/78/c2/6678c200dc79d819ca0a6b540ba61437.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">I Enjoy this</div>
+<img src="https://i.pinimg.com/originals/9c/9c/74/9c9c74e20f742b441d568fa529be26a6.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">Take your time</div>
+<img src="https://i.pinimg.com/originals/b0/d0/5e/b0d05efb169535dbea49b1ce7ad005ef.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">What's your name?</div>
+<img src="https://i.pinimg.com/originals/84/16/ab/8416ab9f2457af0e7804168f1369e85d.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">What's up?</div>
+<img src="https://i.pinimg.com/originals/18/0e/dd/180eddaa939ac271da2044607d056efe.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">Not crazy about it.</div>
+<img src="https://i.pinimg.com/originals/93/8a/c1/938ac1d64d06c246d9fd43db2a992a7c.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">Walk on eggshells.</div>
+<img src="https://i.pinimg.com/originals/99/68/23/9968237faa7f79fd3e2869717f66e902.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">Vanish into thin air.</div>
+<img src="https://i.pinimg.com/originals/72/17/8e/72178ee11a419754eebec98e903cc69a.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">What are you doing?</div>
+<img src="https://i.pinimg.com/originals/d1/15/06/d1150673f47ff1757614ef957b7f805f.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">Just a moment, or  hold on.</div>
+<img src="https://i.pinimg.com/originals/95/ba/61/95ba617a1ba41a2144fd2a2f2836e109.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">How much does it cost?</div>
+<img src="https://i.pinimg.com/originals/a0/3f/43/a03f439d4d81069b5dfb515510d8611f.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">Please hold me.</div>
+<img src="https://i.pinimg.com/originals/fd/92/f0/fd92f05401cd47bd0fdf921a7dbec899.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">It's really hard.</div>
+<img src="https://i.pinimg.com/originals/13/d8/8f/13d88f14897d540ad537ce9262b2c1e3.gif">
+</div>
+
+
+<div class="conv-row">
+<div class="conv-name">It's clear.</div>
+<img src="https://i.pinimg.com/originals/ca/1d/43/ca1d431f21803ed9f6f111d9a1fd7eca.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">Piece of cake.</div>
+<img src="https://i.pinimg.com/originals/60/4c/4e/604c4e56a80d9c4f84d742752f0c7930.gif">
+</div>
+
+<div class="conv-row">
+<div class="conv-name">What's the weather for like tomorrow?</div>
+<img src="https://i.pinimg.com/originals/3a/8d/4f/3a8d4fcd09353dda02b679c73424ca15.gif">
+</div>
+
+
+<div class="conv-row">
+<div class="conv-name">Please open the door.</div>
+<img src="https://i.pinimg.com/originals/a9/6c/bc/a96cbcec716d846b52d35d87068355df.gif">
+</div>
+
+
+</div>
+
+<div class="motivation">
+
+<div class="motivation-text">
+
+<p>
+Learning sign language is a journey. You have already completed important beginner chapters like alphabets, numbers, family, emotions and basic conversations.
+</p>
+
+<p>
+Keep practising daily and do not worry about perfection. Confidence and understanding will grow naturally with time.
+</p>
+
+<p>
+Remember, even small consistent practice can create big improvement in communication skills.
+</p>
+
+</div>
+
+<div class="motivation-gif">
+
+<img src="https://i.pinimg.com/originals/90/38/ce/9038ce94899e7438222feb3d0b8f9fef.gif">
+
+</div>
+
+</div>
+
+<div class="chapter-buttons">
+
+<a href="emotions.html">
+<button>&larr; Previous</button>
+</a>
+
+
+
+<a href="final.html">
+<button>Next &rarr;</button>
+</a>
+
+</div>
+
+
+<script src="project.js"></script>
+</body>
+</html>
